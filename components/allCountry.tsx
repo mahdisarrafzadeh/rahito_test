@@ -47,8 +47,6 @@ export const AllCountry = (props: Props) => {
     useEffect(() => {
         if (first.length !== 0) {
             localStorage.setItem("name", JSON.stringify(first))
-        } else {
-            console.log(first)
         }
         return () => {
         }

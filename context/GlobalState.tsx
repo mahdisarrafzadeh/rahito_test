@@ -25,9 +25,6 @@ type Props = {
 export const GlobalProvider = ({ children }: Props) => {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
-
-  console.log(state)
-
   function getAllCompany(getCountry: allCountry[]) {
     dispatch({
       type: "GET_ALL_COUNTRY",

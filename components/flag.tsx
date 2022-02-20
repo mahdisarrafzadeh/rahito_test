@@ -41,7 +41,6 @@ export const Flag = (props: Props) => {
 
 
     useEffect(() => {
-        console.log(cioc)
         getDataById()
 
     }, [cioc])

@@ -35,7 +35,6 @@ export default function appReducer(state: any, action: actionType) {
       var commentIndex = data.findIndex(function (c: any) {
         return c.name == name;
       });
-      console.log("common", commentIndex);
 
       var updatedComment = update(data[commentIndex], {
         clicks: { $set: true },

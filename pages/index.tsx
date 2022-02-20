@@ -15,11 +15,9 @@ const Home: NextPage = () => {
   const { updateCountry, cioc, country } = useContext(GlobalContext);
   useEffect(() => {
     if (country.length !== 1) {
-      console.log(country.length)
       const data: any = localStorage.getItem("name")
       if (data) {
         const local = JSON.parse(data)
-        console.log(local)
         local.forEach((item: any) => updateCountry(item))
       }
     }
