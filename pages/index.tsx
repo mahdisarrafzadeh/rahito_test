@@ -24,8 +24,8 @@ const Home: NextPage = () => {
   }, [country.length])
 
   return (
-    <div className='flex flex-row w-screen h-screen justify-center  items-center '>
-      <div className='inline-flex space-x-24 shadow-2xl rounded items-center'>
+    <div className='flex  w-screen h-screen justify-center  items-center '>
+      <div className='md:flex-row flex-col flex space-x-24 shadow-2xl rounded items-center'>
         <Flag />
         <AllCountry />
       </div>
