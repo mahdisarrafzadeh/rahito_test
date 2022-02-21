@@ -25,10 +25,11 @@ const Home: NextPage = () => {
 
   return (
     <div className='flex  w-screen h-screen justify-center  items-center '>
-      <div className='md:flex-row flex-col flex space-x-24 shadow-2xl rounded items-center'>
-        <Flag />
+
+      <div className='md:flex-row flex-col flex w-1/2  items-center'>
         <AllCountry />
       </div>
+      <Flag />
     </div >)
 }
 
