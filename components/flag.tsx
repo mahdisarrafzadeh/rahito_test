@@ -45,9 +45,20 @@ export const Flag = (props: Props) => {
 
     }, [cioc])
 
-    return (
-        <React.Fragment>
-            {country_flag?.map((item: any, index: any) => <img key={item.flags.png} className="flex " src={item.flags.png} />)}
-        </React.Fragment>
-    )
+    if (isLoadingTutorial) {
+        return <div><h1>loading</h1></div>
+    }
+    else {
+        return (
+            <div>
+                {country_flag?.map((item: any, index: any) => {
+                    return <div key={item.name.common} className='flex items-center font-bold text-3xl space-y-10 flex-col'>
+                        <h1>{item.name.common}</h1>
+                        <img className="flex " src={item.flags.png} />
+                    </div>
+                }
+                )}
+            </div>
+        )
+    }
 }
